@@ -12,17 +12,17 @@ public class App {
         Algorithm algorithm = null;
         switch (config.getAlgorithm()) {
             case "Beeman":
-                algorithm = new Beeman();
+                algorithm = new Beeman(config);
                 break;
             case "Verlet":
-                algorithm = new Verlet();
+                algorithm = new Verlet(config);
                 break;
             case "GP":
-                algorithm = new GearPredictorO5();
+                algorithm = new GearPredictorO5(config);
                 break;
             default:
-                algorithm = new Beeman();
+                algorithm = new Beeman(config);
         }
-        algorithm.start(config);
+        algorithm.start();
     }
 }
