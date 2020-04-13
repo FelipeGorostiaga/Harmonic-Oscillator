@@ -28,7 +28,6 @@ public class Verlet implements Algorithm {
             speed = calculateSpeed(newPosition, prevPosition);
             prevPosition = position;
             position = newPosition;
-
             System.out.println((t + dt) + "\t" + newPosition);
         }
     }
