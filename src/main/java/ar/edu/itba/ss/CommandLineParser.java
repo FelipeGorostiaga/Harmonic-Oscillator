@@ -49,14 +49,11 @@ public class CommandLineParser {
             if (cmd.hasOption("mass")) {
                 mass = Double.parseDouble(cmd.getOptionValue("m"));
             }
-            if (cmd.hasOption("e")) {
-                k = Double.parseDouble(cmd.getOptionValue("e"));
-            }
-            if (cmd.hasOption("e")) {
-                k = Double.parseDouble(cmd.getOptionValue("e"));
+            if (cmd.hasOption("k")) {
+                k = Double.parseDouble(cmd.getOptionValue("k"));
             }
             if (cmd.hasOption("alg")) {
-                algo = cmd.getOptionValue("e");
+                algo = cmd.getOptionValue("alg");
             }
         } catch (Exception e) {
             System.out.println("Invalid command format");
