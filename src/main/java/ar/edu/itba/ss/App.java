@@ -5,7 +5,6 @@ import ar.edu.itba.ss.algorithms.Beeman;
 import ar.edu.itba.ss.algorithms.GearPredictorO5;
 import ar.edu.itba.ss.algorithms.Verlet;
 
-
 public class App {
     public static void main( String[] args ) {
         Configuration config = CommandLineParser.parseCommandLine(args);

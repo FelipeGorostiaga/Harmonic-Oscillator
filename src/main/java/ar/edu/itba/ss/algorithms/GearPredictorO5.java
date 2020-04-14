@@ -7,7 +7,6 @@ import java.util.List;
 
 public class GearPredictorO5 implements Algorithm {
 
-
     private static final int ORDER = 5;
     private static final int[] factorials = {1, 1, 2, 6, 24, 120};
     private static final double[] alphas5 = {3.0/16, 251.0/360, 1.0, 11.0/18, 1.0/6, 1.0/60};

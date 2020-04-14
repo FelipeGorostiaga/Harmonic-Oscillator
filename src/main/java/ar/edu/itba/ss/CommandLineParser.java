@@ -15,6 +15,7 @@ public class CommandLineParser {
         options.addOption("k", "elasticity", true, "Elasticity value");
         options.addOption("alg", "algorithm", true, "Algorithm to use");
         options.addOption("m", "mass", true, "Mass of particle");
+        options.addOption("dt", "delta-time", true, "Time interval value");
         return options;
     }
 

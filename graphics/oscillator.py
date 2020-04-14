@@ -1,13 +1,7 @@
 from matplotlib import pyplot as plt
-import math
+from functions import *
 import subprocess
 
-# Analytic solution
-def analytic(times):
-    m = 70.0
-    gamma = 100.0
-    k = 10000.0
-    return [math.exp(-(gamma*t)/(2*m)) * math.cos(math.sqrt(k/m - gamma ** 2/ (4* (m ** 2))) * t) for t in times]
 
 algorithms = ["Beeman", "Verlet", "GP5"]
 run_results = []
