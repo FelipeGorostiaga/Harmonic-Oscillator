@@ -14,7 +14,7 @@ public class App {
             case "Verlet":
                 algorithm = new Verlet(config);
                 break;
-            case "GP":
+            case "GP5":
                 algorithm = new GearPredictorO5(config);
                 break;
             default:
