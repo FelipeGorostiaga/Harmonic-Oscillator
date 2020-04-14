@@ -9,11 +9,8 @@ import ar.edu.itba.ss.algorithms.Verlet;
 public class App {
     public static void main( String[] args ) {
         Configuration config = CommandLineParser.parseCommandLine(args);
-        Algorithm algorithm = null;
+        Algorithm algorithm;
         switch (config.getAlgorithm()) {
-            case "Beeman":
-                algorithm = new Beeman(config);
-                break;
             case "Verlet":
                 algorithm = new Verlet(config);
                 break;
